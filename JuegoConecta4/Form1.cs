@@ -50,7 +50,7 @@ namespace JuegoConecta4
         {
             if(e.Row == 1 && e.Column == 1)
             using (SolidBrush brush = new SolidBrush(Color.FromArgb(123, 234, 45, 67)))
-                e.Graphics.FillRectangle(GetBrushFor(e.Row, e.Column), e.CellBounds);
+                e.Graphics.FillRectangle(GetBrushFor(currentPlayer), e.CellBounds);
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -63,9 +63,9 @@ namespace JuegoConecta4
             
         }
 
-        private Brush GetBrushFor(int row, int column)
+        private Brush GetBrushFor(string player)
         {
-            if(currentPlayer == "player1")
+            if(player == "player1")
             {
                 return Brushes.Red;
             }
