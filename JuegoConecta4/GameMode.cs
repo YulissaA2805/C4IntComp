@@ -21,7 +21,8 @@ namespace JuegoConecta4
 
         private void button1_Click(object sender, EventArgs e)//Jugador 1 vs Jugador 2
         {
-            mode = "1vs1";
+            mode = "1vs2";
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)//Jugador 1 vs CPU

@@ -18,17 +18,5 @@ namespace JuegoConecta4
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
-
-        public static void Play(string mode)
-        {
-            if(mode == "1vs1")
-            {
-
-            }
-            else//1vsCPU
-            {
-                
-            }
-        }
     }
 }
